@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calcular Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <script type="text/javascript" charset="UTF-8" src="Script.js"></script>
+
+        <span class="encabezado">CALCULAR NOTA FCE</span>
+
+        <form action="Values" method="get" accept-charset="utf-8" id="form">
+
+            <span class="textInput">Introdueix el numero de respostes encertades</span>
+
+            <input class="input" type="text" name="textEncertades" id="inputEncertades">
+
+            <span class="textInput">Introdueix el numero total de respostes</span>
+
+            <input class="input" type="text" name="textTotal" id="inputTotal">
+
+            <br> <br>
+            <div class="button">
+                <input type="button" value="Calcular" onClick="calcular()" class="buttonStyle">
+            </div>
+
+        </form>
+
+        <span class="textInput" id="resposta"></span>
+
+    </div>
+
+</body>
+</html>
