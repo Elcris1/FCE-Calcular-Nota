@@ -16,12 +16,12 @@ function calcular(){
     else {
         var nota = floatEncertades*10/floatTotal;
         if (nota>=6){
-            document.getElementById("resposta").setAttribute("class", "aprovat");
-            document.getElementById("resposta").innerHTML = "La teva nota és " + nota.toFixed(2);
+            document.getElementById("divNota").setAttribute("class", "aprovat");
+            document.getElementById("resposta").innerHTML = "La teva nota és " + nota.toFixed(2) + " :)";
         }
         else {
-            document.getElementById("resposta").setAttribute("class", "suspes");
-            document.getElementById("resposta").innerHTML = "La teva nota és " + nota.toFixed(2);
+            document.getElementById("divNota").setAttribute("class", "suspes");
+            document.getElementById("resposta").innerHTML = "La teva nota és " + nota.toFixed(2) + " :(";
         }
 
     }
